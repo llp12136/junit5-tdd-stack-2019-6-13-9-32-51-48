@@ -23,6 +23,9 @@ public class Game {
 //            result +="FizzBuzz";
 //            return  result;
 //        }
+        if(i<1||i>120){
+            return  "isvalid";
+        }
        if(i %3==0){
            result +=Fizz;
           // return  result;
@@ -35,7 +38,7 @@ public class Game {
             result +=Whizz;
            // return  result;
         }
-        if(result ==null){
+        if(result ==""){
             return  String.valueOf(i);
         }
         return  result;
